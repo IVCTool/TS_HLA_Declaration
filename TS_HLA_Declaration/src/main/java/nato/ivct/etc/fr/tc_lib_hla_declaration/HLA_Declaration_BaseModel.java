@@ -654,7 +654,7 @@ public class HLA_Declaration_BaseModel extends IVCT_BaseModel {
 			federateHandle = theAttributes.get(federateHandleId); 
     	}
 
-    	if ((federateName.equals(sutName)) || (federateHandle != null)) {
+    	if ((federateName.equals(sutName)) && (federateHandle != null)) {
 			if (needToFollowFederate(federateHandle) == false) {
 	            logger.debug("following federate " + sutName);
 			}
